@@ -1,13 +1,13 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 import './carrousel.css';
 
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerView: 2.5,
+});
+
 const Carrousel = () => {
     
-    const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidesPerView: 2.3,
-    });
-
     return (
         <section className='carrousel'>
             <h2 className='carrousel__titulo'>Novos Lançamentos</h2>
@@ -23,8 +23,7 @@ const Carrousel = () => {
                     <div className="swiper-slide"><img src="./imagens/livro-Acessibilidade.svg" alt="Livro sobre acessibilidade na web" /></div>
         
                 </div>
-                
-                <div className="swiper-pagination"></div>
+            
 
             </div>
         </section>
