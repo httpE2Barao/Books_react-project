@@ -1,6 +1,6 @@
 .contato {
     background-color: var(--bg-color);
-    padding: 1em;
+    padding: 1.5em 1.3em 2em;
 }
 .contato__titulo,
 .contato__texto
