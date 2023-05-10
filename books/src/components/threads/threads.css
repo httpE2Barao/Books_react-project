@@ -18,6 +18,7 @@
 }
 .threads__link {
     color: var(--bg-color);
+    border-radius: 5px;
     padding: 1em;
     background-color: var(--text-title-color);
     font-size: 14px;
