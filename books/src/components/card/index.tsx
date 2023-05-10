@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './card.css'
 
 interface props {

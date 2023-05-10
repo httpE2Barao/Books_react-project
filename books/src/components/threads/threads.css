@@ -1,0 +1,25 @@
+.threads {
+    background-image:  var(--gradient-color);
+    padding: 1.3em 0;
+}
+.threads__titulo {
+    color: var(--bg-color);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.threads__lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.threads__item {
+    margin: 2em .5em;
+}
+.threads__link {
+    color: var(--bg-color);
+    padding: 1em;
+    background-color: var(--text-title-color);
+    font-size: 14px;
+    font-weight: 700;
+}

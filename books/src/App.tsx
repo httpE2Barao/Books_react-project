@@ -1,8 +1,9 @@
-import React from 'react';
 import Banner from './components/banner';
 import Header from './components/header';
 import Carrousel from './components/carrousel';
 import Card from './components/card';
+import Threads from './components/threads';
+import Contact from './components/contact';
 
 function App() {
   
@@ -42,6 +43,8 @@ function App() {
         texto='Analista de sistemas e escritora, Juliana é especialista em Front-End.'
         src='./imagens/img-autora.svg' alt='Imagem da autora Juliana Agarikov'
       />
+      <Threads />
+      <Contact />
     </div>
   );
 }
