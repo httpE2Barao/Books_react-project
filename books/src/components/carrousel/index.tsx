@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css/pagination';
 import './carrousel.css';
   
 interface props {
@@ -16,9 +17,13 @@ const Carrousel = (props:props) => {
     return (
       <>
       <h2 className='carrousel__titulo'>{props.titulo}</h2>
+      
       <Swiper
+        modules={[Pagination]}
         spaceBetween={10}
         slidesPerView={2.5}
+        pagination={{ clickable: true }}
+        className='swiper'
         >
         <SwiperSlide className="swiper-slide"><img src={props.src1} alt={props.alt1}/></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={props.src2} alt={props.alt2}/></SwiperSlide>

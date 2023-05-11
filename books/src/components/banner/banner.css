@@ -27,5 +27,26 @@
     text-align: center;
     color: var(--bg-color);
     background: url(../../../public/imagens/icone-lupa.svg) no-repeat;
-    background-position: 1em 1px;
+    background-position: .5em 1px;
 } 
+
+@media screen and (min-width: 768px) {
+    .banner {
+        padding: 3.5em 1.5em;
+    }
+    .banner__titulo {
+        font-size: 26px;
+    }
+    .banner__pesquisa {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+    .banner__pesquisa {
+        width: 50%;
+    }
+}

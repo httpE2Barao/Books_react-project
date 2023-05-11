@@ -42,8 +42,39 @@ const Header = () => {
             src="./imagens/icone-main.svg"
             alt="Logo Books"
           />
-      
+          <h1 className='container__titulo'>Books</h1>
         </div>
+
+        <ul className='opcoes'>
+          <input type="checkbox" id="opcoes__menu" className='opcoes__botao'/>
+          
+          <label htmlFor="opcoes__menu">
+            <li className='opcoes__item'>Categorias</li>
+          </label>
+
+          <ul className="lista-menu">
+            <li className="lista-menu__item">
+              <a href="#" className="lista-menu__link">
+                Programação</a>
+            </li>
+            <li className="lista-menu__item">
+              <a href="#" className="lista-menu__link">
+                Front-end</a>
+            </li>
+            <li className="lista-menu__item">
+              <a href="#" className="lista-menu__link">
+                Back-end</a>
+            </li>
+            <li className="lista-menu__item">
+              <a href="#" className="lista-menu__link">
+                Dados</a>
+            </li>
+          </ul>
+
+          <li className='opcoes__item'><a href="#" className='opcoes__link'>Favoritos</a></li>
+          <li className='opcoes__item'><a href="#" className='opcoes__link'>Minha Estante</a></li>
+        </ul>
+
         <div className="container">
             <a href="#">
               <img 
