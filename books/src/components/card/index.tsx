@@ -8,12 +8,13 @@ interface props {
     alt: string
     estrela?: string
     showIcones?: boolean
+    css?: string
 }
 
 const Card = (props:props) => { 
 
     return (
-        <div className='card'>
+        <div className={`card ${props.css}`}>
             {props.showIcones && (
             <>
                 <img className='icone-estrela' src={props.estrela} /> <img className='icone-estrela' src={props.estrela} /> <img className='icone-estrela' src={props.estrela} /> <img className='icone-estrela' src={props.estrela} /> <img className='icone-estrela' src={props.estrela} /> 

@@ -15,7 +15,7 @@ const Header = () => {
             <span className="menu-hamburger"></span>
           </label>
       
-          <ul className="lista-menu">
+          <ul className="lista-menu menu-mobile">
             <li className="lista-menu__titulo">
               Categorias
             </li>
@@ -82,16 +82,18 @@ const Header = () => {
               src="./imagens/icone-favoritos.svg" 
               alt="Meu Favoritos"/>
             </a>
-            <a href="#">
+            <a href="#" className='container__link'>
               <img 
-              className="icone" 
+              className="icone sacola" 
               src="./imagens/icone-sacola.svg" 
               alt="Minha Sacola"/>
+              <p className='container__texto'>Minha sacola</p>
             </a>
-            <a href="#">
-              <img className="icone" 
+            <a href="#" className='container__link'>
+              <img className="icone perfil" 
               src="./imagens/icone-perfil.svg" 
               alt="Meu Perfil"/>
+              <p className='container__texto'>Meu perfil</p>
             </a>
         </div>
         </header>

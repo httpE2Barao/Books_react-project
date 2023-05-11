@@ -1,6 +1,6 @@
 .contato {
     background-color: var(--bg-color);
-    padding: 1.5em 1.3em 2em;
+    padding: 2em 1.3em 2em;
 }
 .contato__titulo,
 .contato__texto
@@ -66,5 +66,21 @@
     .contato__email {
         width: 50%;
         height: 50px;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .contato__titulo {
+        font-size: 2vw;
+    }
+    .contato__texto {
+        font-size: 1.6vw;
+    }
+    .contato__email {
+        height: 3vw;
+    }
+    .contato__email::placeholder {
+        font-size: 1.3vw;
+        background-size: 1.9vw;
+        background-position-y: .3vw;
     }
 }

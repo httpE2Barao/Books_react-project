@@ -8,109 +8,154 @@
     position: relative;
   }
   
-  .menu-hamburger {
-    background-image: url("../../../public/imagens/icone-menu.svg");
-    display: inline-block;
-    width: 25px;
-    height: 24px;
-  }
-  
-  .header-desktop {
+.menu-hamburger {
+  background-image: url("../../../public/imagens/icone-menu.svg");
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+}
+
+.header-desktop {
+  display: none;
+  padding: 30px 60px;
+}
+
+.header .lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+  border: solid 1px var(--text-price-color);
+  border-top: none;
+  transform: translateX(-20px);
+  background-color: var(--bg-color);
+}
+.container__titulo {
+  display: none;
+}
+.opcoes {
+  display: none;
+}
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+}
+.lista-menu__link {
+  color: var(--text-price-color);
+}
+
+.lista-menu__titulo {
+  color: var(--text-title-color);
+}
+
+.container__botao:checked ~ .lista-menu {
+  display: flex;
+  flex-flow: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.container input {
+  display: none;
+}
+.container .icone {
+  width: 23px;
+}
+.container div:hover {
+  background-image: linear-gradient(to right, #002F52, #326589);
+  color: #fff;
+  cursor: pointer;
+}
+.container__texto {
+  display: none;
+}
+.container__link {
+  margin-right: 10px;
+}
+
+.icone-main {
+  transform: translate(0, -3px);
+  width: 33px;
+}
+.fav {
+  transform: translateY(1px);
+}
+.sacola {
+  height: 25px;
+}
+.perfil {
+  height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile,
+  .menu-mobile~.container__botao {
     display: none;
-    padding: 30px 60px;
-  }
-  
-  .header .lista-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 60vw;
-    border: solid 1px var(--text-price-color);
-    border-top: none;
-    transform: translateX(-20px);
-    background-color: var(--bg-color);
   }
   .container__titulo {
-    display: none;
+    font-family: var(--font-sec);
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .lista-menu__item {
+    padding: 1.5em;
   }
   .opcoes {
-    display: none;
-  }
-  .lista-menu__titulo,
-  .lista-menu__item {
-    padding: 1em;
-  }
-  .lista-menu__link {
-    color: var(--text-price-color);
-  }
-  
-  .lista-menu__titulo {
-    color: var(--text-title-color);
-  }
-  
-  .container__botao:checked ~ .lista-menu {
     display: flex;
-    flex-flow: column;
+    gap: 1.5em;
   }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-flow: row nowrap;
-    align-items: center;
+  .opcoes__item {
+    text-transform: uppercase;
   }
-  .container input {
-    display: none;
-  }
-  .container .icone {
-    width: 23px;
-  }
-  .container div:hover {
-    background-image: linear-gradient(to right, #002F52, #326589);
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .icone-main {
-    transform: translate(0, -3px);
-    width: 33px;
+  .opcoes__link {
+    color: #000;
   }
   .fav {
-    transform: translateY(1px);
+    display: none;
   }
+  .menu-hamburger {
+    display: none;
+  }
+  .opcoes__botao:checked~.lista-menu {
+    display: block;
+    width: auto;
+  }
+  .opcoes__botao {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .opcoes {
+    margin: 0 auto 0 30px;
+  }
+  .container__link {
+    display: flex;
+    color: #000;
+    align-items: center;
+    gap: 10px;
+  }
+  .container__texto {
+    display: block;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .container__titulo {
+    font-size: 1.9vw;
+  }
+  .lista-menu__item {
+    font-size: 1vw;
+  }
+  .opcoes__item {
+    font-size: 1.2vw;
+  }
+  .container__link {
+    font-size: 1.2vw;
+  }
+}
   
-  @media screen and (min-width: 768px) {
-    .container__titulo {
-      font-family: var(--font-sec);
-      display: block;
-      font-size: 30px;
-      font-weight: 700;
-    }
-    .lista-menu__item {
-      padding: 1.5em;
-    }
-    .opcoes {
-      display: flex;
-      gap: 1.5em;
-    }
-    .opcoes__item {
-      text-transform: uppercase;
-    }
-    .opcoes__link {
-      color: #000;
-    }
-    .fav {
-      display: none;
-    }
-    .menu-hamburger {
-      display: none;
-    }
-    .opcoes__botao:checked~.lista-menu {
-      display: block;
-      width: auto;
-    }
-    .opcoes__botao {
-      display: none;
-    }
-  }

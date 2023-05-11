@@ -38,6 +38,7 @@ function App() {
       <Card 
         estrela="./imagens/icone-estrela.svg"
         showIcones={true}
+        css='card__estrela'
         titulo='Autora do Mês'
         titulo2='Juliana Agarikov'
         texto='Analista de sistemas e escritora, Juliana é especialista em Front-End.'

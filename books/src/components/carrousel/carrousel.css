@@ -32,3 +32,16 @@
         width: 70%;
     }
 }
+@media screen and (min-width: 1440px) {
+    .swiper {
+        margin-left: 50px;
+        width: 50%;
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .carrousel__titulo {
+        font-size: 2vw;
+    }
+}
+

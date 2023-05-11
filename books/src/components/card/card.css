@@ -92,4 +92,53 @@
     .descricao__texto {
         font-size: 20px;
     }
+    .icone-estrela {
+        width: 20px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .card {
+        transform: translate(50px, -7vw);
+        position: relative;
+        margin-bottom: 0;
+        width: 40%;
+        display: inline-block;
+        padding: 13px 20px;
+    }
+    .card__estrela {
+        padding: 0px 20px;
+        transform: translate(50px, -5vw);
+    }
+    .icone-estrela {
+        width: 25px;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .card {
+        transform: translate(50px, -6vw);
+    }
+    .descricao__titulo {
+        font-size: .65em;
+    }
+    .descricao__titulo-livro {
+        font-size: .65em;
+    }
+    .descricao__texto {
+        font-size: .5em;
+    }
+    .icone-estrela {
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .card {
+        transform: translate(50px, -5.5vw);
+    }
+    .card__estrela {
+        transform: translate(50px, -6vw);
+    }
+    .icone-estrela {
+        width: 1.8vw;
+    }
 }
