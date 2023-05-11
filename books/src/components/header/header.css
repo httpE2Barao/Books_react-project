@@ -25,6 +25,8 @@
     position: absolute;
     top: 100%;
     width: 60vw;
+    border: solid 1px var(--text-price-color);
+    border-top: none;
     transform: translateX(-20px);
     background-color: var(--bg-color);
   }
@@ -84,6 +86,9 @@
       display: block;
       font-size: 30px;
       font-weight: 700;
+    }
+    .lista-menu__item {
+      padding: 1.5em;
     }
     .opcoes {
       display: flex;
