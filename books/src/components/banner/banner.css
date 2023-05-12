@@ -23,12 +23,13 @@
 }
 .banner__pesquisa::placeholder {
     font-family: var(font-main);
+    height: 20px;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
     color: var(--bg-color);
     background: url(../../../public/imagens/icone-lupa.svg) no-repeat;
-    background-position: 13px 0px;
+    background-position: 13px 50%;
 } 
 
 @media screen and (min-width: 768px) {
@@ -62,7 +63,7 @@
     }
     .banner__pesquisa::placeholder {
         font-size: 1.2vw;
-        background-position: 15px 1px;
+        background-position: 15px 50%;
     }
 }
 @media screen and (min-width: 1728px) {
@@ -78,7 +79,7 @@
     }
     .banner__pesquisa::placeholder {
         font-size: 1.1vw;
-        background-position: 15px 2px;
+        background-position: 15px 50%;
         background-size: 1vw;
     }
 }
